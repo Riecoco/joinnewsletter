@@ -9,7 +9,7 @@
   /*colours*/
   --white: white;
   --ghost-white: #f9fafb;
-  --bright-grey: #e5e7eb;
+  --bright-grey: #E5E7EB;
   --metal: #6c727f;
   --charcoal: #394150;
   --black: black;
@@ -66,7 +66,7 @@ Here's your code organized by property: */
   font-size: 0.875rem;
 }
 
-section {
+main {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -74,10 +74,10 @@ section {
   align-items: center;
   gap: 1rem;
 }
-section .info{
+main .info{
   width: 45em;
 }
-section .info img {
+main .info img {
   width: 3.125rem; /*50px*/
 }
 
