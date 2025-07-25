@@ -25,7 +25,7 @@ body {
   background-color: var(--ghost-white);
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 1rem;
 }
 /* Organizing by property is generally preferred for CSS readability and maintainability. 
 This way, you can quickly see which selectors share the same property values. 
