@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  /*fonts*/
+  --poppins-font: "Poppins", sans-serif;
+  --font-weight-reg: 400;
+  --font-weight-md: 500;
+  --font-weight-smb: 600;
+
+  /*colours*/
+  --white: white;
+  --ghost-white: #f9fafb;
+  --bright-grey: #e5e7eb;
+  --metal: #6c727f;
+  --charcoal: #394150;
+  --black: black;
+  --blue: #284bce;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: var(--ghost-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Organizing by property is generally preferred for CSS readability and maintainability. 
+This way, you can quickly see which selectors share the same property values. 
+Here's your code organized by property: */
+
+.poppins-heading,
+.poppins-subheading,
+.poppins-placeholder,
+.poppins-button-text,
+.poppins-helper-text {
+  font-family: var(--poppins-font);
+}
+
+.poppins-heading,
+.poppins-button-text {
+  font-weight: var(--font-weight-smb);
+}
+.poppins-subheading,
+.poppins-helper-text {
+  font-weight: var(--font-weight-reg);
+}
+.poppins-placeholder {
+  font-weight: var(--font-weight-md);
+}
+
+.poppins-placeholder,
+.poppins-button-text {
+  font-size: 1rem;
+}
+.poppins-heading {
+  font-size: 3rem;
+}
+.poppins-subheading {
+  font-size: 1.25rem;
+  color: var(--metal);
+}
+.poppins-helper-text {
+  font-size: 0.875rem;
+}
+
+section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+section .info{
+  width: 45em;
+}
+section .info img {
+  width: 3.125rem; /*50px*/
+}
+
+.form-box {
+  width: 35rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 20px 0px rgba(85, 85, 85, 0.1);
+  margin-top: 2.5rem; /*40px*/
+  padding: 1.3rem;
+}
+.form-box form input {
+  display: block;
+  text-align: center;
+  background-color: var(--ghost-white);
+  color: var(--metal);
+}
+.form-box form button {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.form-box form input, .form-box form button {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  border: 2px solid var(--bright-grey);
+}
